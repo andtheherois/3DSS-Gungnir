@@ -1,2 +1,2 @@
-# 3DSS-fom-Gungnir
-3DSS support for MK18 Gungnir mod by ATHI. Requires Original mod: https://drive.google.com/file/d/1ctnzS0THMkUl4THsw_AsjjtkTsGen5dQ/view?usp=drive_link
+# 3DSS-Gungnir
+Stand alone MK18 Gungnir with 3DSS support. Requires https://www.moddb.com/mods/stalker-anomaly/addons/mk-18-mjolnir-marksman-rifle and https://www.moddb.com/mods/stalker-anomaly/addons/mk-18-mjolnir-reanimation
