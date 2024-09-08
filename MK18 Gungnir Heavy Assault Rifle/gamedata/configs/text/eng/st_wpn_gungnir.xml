@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<string_table>
+	
+
+<string id="st_wpn_gungnir">
+		<text>MK 18 "Gungnir"</text>
+	</string>
+	<string id="st_wpn_gungnir_descr">
+		<text>The MK 18 Gungnir rifle is a cut down MK 18 Mjolnir that was created by Zone technitians in order to deal with larger threats often found stalking the urban areas of the Zone.  It's compact size makes it easier to use in tight quarters, however the reduced barrel length negatively impacts it's overall velocity while making it's recoil much harsher.  This weapon is best paired with the added strength of an exo suit in order to control the immense recoil. \n \n
+		%c[ui_gray_2]ATTACHMENTS: \n
+		%c[d_purple] - %c[ui_gray_2] Scopes: All for picatinny/weaver (except of Red Dot Sights with low mount: Trijicon RMR, Leupold DeltaPoint PRO, Aimpoint T1 (low mount), Docter Sight, 1P76 Rakurs (low mount). \n\n</text>
+	</string>	
+</string_table>
