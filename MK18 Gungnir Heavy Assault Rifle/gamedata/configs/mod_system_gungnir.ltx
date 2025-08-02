@@ -68,25 +68,26 @@ light_var_range                          = 0.5
 upgrades                    = up_gr_firstab_m4, up_gr_seconab_m4, up_gr_thirdab_m4, up_gr_fourtab_m4, up_gr_fifthab_m4
 installed_upgrades          =
 upgrade_scheme              = upgrade_scheme_lr300
-upgr_icon_x                 = 1750
-upgr_icon_y                 = 500
-upgr_icon_width             = 300
-upgr_icon_height            = 100
+		upgr_icon_path               = ui\mjolnir_icon
+        upgr_icon_x                 = 300
+        upgr_icon_y                 = 400
+        upgr_icon_width             = 300
+        upgr_icon_height            = 100
 
 fire_modes                               = -1, 1
 ammo_class                               = ammo_magnum_300, ammo_magnum_300_bad, ammo_magnum_300_verybad
-ammo_elapsed                             = 10
-ammo_mag_size                            = 10
+ammo_elapsed                             = 18
+ammo_mag_size                            = 18
 startup_ammo                             = 40
 
-scopes                                   = acog, eot, specter, 0kp2, ac10632, leupold, aimpoint, point_aimpro, e0t2, pn23, compm4s, marchf, triji, mark8_rmr, spec_alt, mepro, gauss_sight, t12, ps320
+scopes                                   = acog, eot, specter, 0kp2, ac10632, leupold, aimpoint, point_aimpro, e0t2, pn23, compm4s, marchf, triji, mark8_rmr, spec_alt, gauss_sight, t12, ps320, echo1, razorhd, cortex, p1x42, devo, uh2, he510, bossxe, lco1, gee36
 scope_status                             = 0
 scope_zoom_factor                        = 0
 
-silencer_name                            = none
-silencer_status                          = 0
-silencer_x                               = 203
-silencer_y                               = 10
+silencer_name                            = wpn_sil_timberwolf
+silencer_status                          = 2
+silencer_x                               = 221
+silencer_y                               = 19
 silencer_light_color                     = 0.6, 0.5, 0.3
 silencer_light_range                     = 0.01
 silencer_light_time                      = 0.2
@@ -132,38 +133,38 @@ misfire_end_prob                         = 0.11
 condition_queue_shot_dec                 = 0.00095
 condition_shot_dec                       = 0.00095
 
-cam_return                  = 1
-cam_relax_speed             = 4.5
-cam_dispersion              = 2.5
-cam_dispersion_frac         = 1.0
-cam_dispersion_inc          = 2.5
-cam_max_angle               = 50.0
-cam_max_angle_horz          = 50.0
-cam_step_angle_horz         = 0.25
-zoom_cam_relax_speed        = 0.75
-zoom_cam_dispersion         = 1.0
-zoom_cam_dispersion_frac    = 1.0
-zoom_cam_dispersion_inc     = 1.5
-zoom_cam_max_angle          = 50.0
-zoom_cam_max_angle_horz     = 50.0
-zoom_cam_step_angle_horz    = 2.0
+cam_return                               = 1
+cam_relax_speed                          = 10
+cam_dispersion                           = 2.5
+cam_dispersion_frac                      = 1.0
+cam_dispersion_inc                       = 0.5
+cam_max_angle                            = 50.0
+cam_max_angle_horz                       = 50.0
+cam_step_angle_horz                      = 1.25
+zoom_cam_relax_speed                     = 9
+zoom_cam_dispersion                      = 2.25
+zoom_cam_dispersion_frac                 = 1.0
+zoom_cam_dispersion_inc                  = 0.25
+zoom_cam_max_angle                       = 50.0
+zoom_cam_max_angle_horz                  = 50.0
+zoom_cam_step_angle_horz                 = 1.25
 
-PDM_disp_accel_factor                    = 2.75
-PDM_disp_base                            = 1.15
+PDM_disp_accel_factor                    = 1.5
+PDM_disp_base                            = 1.3
 PDM_disp_crouch                          = 1.0
 PDM_disp_crouch_no_acc                   = 1.0
-PDM_disp_vel_factor                      = 2.75
+PDM_disp_vel_factor                      = 1.5
 
 cam_relax_speed_ai                       = 360
-zoom_cam_relax_speed_ai                  = 360
-holder_fov_modifier                      = 1.0
-holder_range_modifier                    = 1.0
-min_radius                               = 0
-max_radius                               = 500
-hit_probability_gd_novice                = 1.00
-hit_probability_gd_stalker               = 1.00
-hit_probability_gd_veteran               = 1.00
-hit_probability_gd_master                = 1.00
+zoom_cam_relax_speed_ai                  = 120.75
+holder_fov_modifier                      = 0.75
+holder_range_modifier                    = 2.00
+min_radius                               = 50
+max_radius                               = 90
+hit_probability_gd_novice                = 1.0
+hit_probability_gd_stalker               = 1.0
+hit_probability_gd_veteran               = 1.0
+hit_probability_gd_master                = 1.0
 
 kill_msg_x                               = 80
 kill_msg_y                               = 59
@@ -175,23 +176,19 @@ lewd_lens_hide_bone          = lens
 lewd_lens_hide_delays        = 0.1,0
 lewd_lens_hide_aim_mode      = true, false, false	
 ;-----------------------------------------------------------------------------------------SND----------------------------------------------------------------------------------------------------------------
-snd_draw = weapons\generic\eastern_draw
-snd_holster = weapons\sniper_holster
-snd_reload = weapons\librarian_mjolnir\reload
-snd_reload_empty = $no_sound
-snd_reload_misfire = $no_sound
-snd_bore = weapons\librarian_mjolnir\bored
-snd_switch_mode = weapons\m4a1\m4a1_switch
-scripted_snd_reload_misfire_empty = weapons\librarian_mjolnir\unjam_empty
-scripted_snd_reload_misfire = weapons\librarian_mjolnir\unjam
-scripted_snd_reload_empty = weapons\librarian_mjolnir\reload_empty
-scripted_snd_reload_empty_variant1 = weapons\librarian_mjolnir\reload_empty_bolt_release
-snd_empty = weapons\generic\ar_empty,	0.7
-snd_shoot = wpn_m82_snd_shoot
-snd_shoot_actor = wpn_m82_snd_shoot_actor
-snd_silncer_shot = weapons\scar_yang_prince\scar_sil_1
-snd_silncer_shot1 = weapons\scar_yang_prince\scar_sil_2
-snd_silncer_shot2 = weapons\scar_yang_prince\scar_sil_3
+snd_draw                                 = weapons\scar_yang_prince\scar_inspect
+snd_holster                              = weapons\scar_yang_prince\scar_inspect
+
+snd_reload              = weapons\mjolnirj\stormbreaker_reload
+snd_reload_empty        = weapons\mjolnirj\stormbreaker_reload_empty
+snd_reload_misfire      = weapons\mjolnirj\stormbreaker_unjam
+
+snd_empty				                 = weapons\generic\ar_empty,	0.7
+snd_shoot               				                          = wpn_ash12_snd_shoot
+snd_shoot_actor													  = wpn_ash12_snd_shoot_actor
+snd_silncer_shot			                                      = wpn_big_snd_silenced
+snd_silncer_shot_actor		                                      = wpn_big_snd_silenced_actor
+snd_switch_mode			= weapons\ru556\ru556_firemode
 ;------------------------------------------------------------------------HUD----------------------------------------------------------------------------
 [wpn_gungnir_hud]:hud_base
 
@@ -199,86 +196,57 @@ item_visual                              = anomaly_weapons\wpn_gungnir\wpn_gungn
 
 attach_place_idx                         = 0
 zoom_hide_crosshair                      = true   
-
-aim_hud_offset_pos               = -0.061813, 0.018909, -0.059514
-aim_hud_offset_pos_16x9          = -0.061813, 0.018909, -0.059514
-aim_hud_offset_rot               = -0.00284, 0.000689, 0
-aim_hud_offset_rot_16x9          = -0.00284, 0.000689, 0
-
-hands_orientation                = -0.004269, -0.000569, 0
-hands_orientation_16x9           = -0.004269, -0.000569, 0
-hands_position                   = -0.013973, 0.00355, 0.00214
-hands_position_16x9              = -0.013973, 0.00355, 0.00214
+		
+        aim_hud_offset_pos               = -0.057663, -0.010056, -0.044303
+        aim_hud_offset_pos_16x9          = -0.057663, -0.010056, -0.044303
+        aim_hud_offset_rot               = 0.008182, 0.006721, 0
+        aim_hud_offset_rot_16x9          = 0.008182, 0.006721, 0
+		
+        hands_orientation                = -0.009814, 0.018208, 0
+        hands_orientation_16x9           = -0.009814, 0.018208, 0
+        hands_position                   = 0.0081, -0.009388, 0.008246
+        hands_position_16x9              = 0.0081, -0.009388, 0.008246
+		
+        lowered_hud_offset_pos           = 0.026859, -0.002557, 0
+        lowered_hud_offset_pos_16x9      = 0.026859, -0.002557, 0
+        lowered_hud_offset_rot           = 0.106537, -0.66208, 0.1
+        lowered_hud_offset_rot_16x9      = 0.106537, -0.66208, 0.1
 		
 item_orientation                 = 0, 0, 0
 item_position                    = 0, 0, 0
-		
-lowered_hud_offset_pos           = 0.087387, -0.009879, -0.000359
-lowered_hud_offset_pos_16x9      = 0.087387, -0.009879, -0.000359
-lowered_hud_offset_rot           = 0.099722, -0.798513, 0.093245
-lowered_hud_offset_rot_16x9      = 0.099722, -0.798513, 0.093245
 
-        anm_bore									= mjolnir18_hand_bored, mjolnir18_idle
-        anm_show									= mjolnir18_hand_draw, mjolnir18_idle
-        anm_hide									= mjolnir18_hand_holster, mjolnir18_idle
+anm_hide                                 = stormbreaker_holster, idle
+anm_hide_empty                           = stormbreaker_holster, idle_empty
+anm_idle                                 = stormbreaker_idle, idle
+anm_idle_empty                           = stormbreaker_idle, idle_empty
+anm_idle_aim                             = stormbreaker_idle_aim, idle
+anm_idle_aim_empty                       = stormbreaker_idle_aim, idle_empty
+anm_idle_aim_moving                      = stormbreaker_idle_aim, idle, 2.0
+anm_idle_aim_moving_empty                = stormbreaker_idle_aim, idle_empty, 2.0
+anm_idle_moving_crouch                   = stormbreaker_idle_aim, 1.5
+anm_idle_moving_crouch_empty             = stormbreaker_idle_aim, idle_empty, 1.5
+anm_idle_aim_moving_crouch               = stormbreaker_idle_aim, 1.2
+anm_idle_aim_moving_crouch_empty         = stormbreaker_idle_aim, idle_empty, 1.2
+anm_idle_moving                          = stormbreaker_walk, idle, 1.9
+anm_idle_moving_empty                    = stormbreaker_walk, idle_empty, 1.9
+anm_idle_sprint                          = stormbreaker_run, idle, 1.8
+anm_idle_sprint_empty                    = stormbreaker_run, idle_empty, 1.8
+anm_reload                               = stormbreaker_reload, reload
+anm_reload_empty                         = stormbreaker_reload_empty, reload_empty
+anm_shots                                = stormbreaker_shoot, shoot, 2.0
+anm_show                                 = stormbreaker_draw, idle
+anm_show_empty                           = stormbreaker_draw, idle_empty
+anm_reload_misfire                       = stormbreaker_unjam, unjam
+anm_bore				                 = stormbreaker_inspect, idle
+anm_bore_empty                           = stormbreaker_inspect, idle_empty
 
-        anm_idle									= mjolnir18_hand_idle, mjolnir18_idle
-        anm_idle_aim_moving							= mjolnir18_hand_moving, mjolnir18_idle, 0.75
-        anm_idle_aim_moving_crouch					= mjolnir18_hand_moving, mjolnir18_idle, 0.7
-        anm_idle_moving								= mjolnir18_hand_moving, mjolnir18_idle
-        anm_idle_moving_crouch						= mjolnir18_hand_moving, mjolnir18_idle, 0.7
-        anm_idle_sprint								= mjolnir18_hand_sprint, mjolnir18_idle, 1.1
-
-        anm_reload									= mjolnir18_hand_reload, mjolnir18_reload
-        anm_reload_empty							= mjolnir18_hand_reload_empty, mjolnir18_reload_empty
-		anm_reload_empty_variant1					= mjolnir18_hand_reload_empty_bolt_release, mjolnir18_reload_empty_bolt_release
-
-        anm_shots									= mjolnir18_hand_shoot, mjolnir18_shoot
-		anm_shots_aim								= mjolnir18_hand_shoot_aim, mjolnir18_shoot
-		anm_shots_aim_l								= mjolnir18_hand_shoot_aim, mjolnir18_shoot_last
-        anm_idle_aim								= mjolnir18_hand_idle_aim, mjolnir18_idle
-
-
-        anm_bore_empty								= mjolnir18_hand_bored, mjolnir18_idle_empty
-        anm_show_empty								= mjolnir18_hand_draw, mjolnir18_idle_empty
-        anm_hide_empty								= mjolnir18_hand_holster, mjolnir18_idle_empty
-        anm_shot_l									= mjolnir18_hand_shoot, mjolnir18_shoot_last
-
-        anm_idle_empty								= mjolnir18_hand_idle, mjolnir18_idle_empty
-        anm_idle_aim_moving_empty					= mjolnir18_hand_moving, mjolnir18_idle_empty, 0.75
-        anm_idle_aim_moving_crouch_empty			= mjolnir18_hand_moving, mjolnir18_idle_empty, 0.7
-        anm_idle_moving_empty						= mjolnir18_hand_moving, mjolnir18_idle_empty
-        anm_idle_moving_crouch_empty				= mjolnir18_hand_moving, mjolnir18_idle_empty, 0.7
-        anm_idle_sprint_empty						= mjolnir18_hand_sprint, mjolnir18_idle_empty, 1.1
-
-        anm_idle_aim_empty							= mjolnir18_hand_idle_aim, mjolnir18_idle_empty
-
-        ; Jammed Animation Variants
-        anm_idle_jammed								= mjolnir18_hand_idle, mjolnir18_idle
-        anm_show_jammed								= mjolnir18_hand_draw, mjolnir18_idle
-        anm_hide_jammed								= mjolnir18_hand_holster, mjolnir18_idle
-        anm_idle_aim_jammed							= mjolnir18_hand_idle_aim, mjolnir18_idle
-        anm_idle_sprint_jammed						= mjolnir18_hand_sprint, mjolnir18_idle, 1.2
-        anm_idle_moving_jammed						= mjolnir18_hand_moving, mjolnir18_idle
-        anm_idle_moving_crouch_jammed				= mjolnir18_hand_moving, mjolnir18_idle, 0.7
-        anm_bore_jammed								= mjolnir18_hand_empty_click, mjolnir18_idle
-        anm_reload_misfire							= mjolnir18_hand_unjam, mjolnir18_unjam
-
-        ; Empty Jammed Animation Variants
-        anm_idle_empty_jammed						= mjolnir18_hand_idle, mjolnir18_idle
-        anm_show_empty_jammed						= mjolnir18_hand_draw, mjolnir18_idle
-        anm_hide_empty_jammed						= mjolnir18_hand_holster, mjolnir18_idle
-        anm_idle_aim_empty_jammed					= mjolnir18_hand_idle_aim, mjolnir18_idle
-        anm_idle_sprint_empty_jammed				= mjolnir18_hand_sprint, mjolnir18_idle, 1.1
-        anm_idle_moving_empty_jammed				= mjolnir18_hand_moving, mjolnir18_idle
-        anm_idle_moving_crouch_empty_jammed			= mjolnir18_hand_moving, mjolnir18_idle, 0.7
-        anm_bore_empty_jammed						= mjolnir18_hand_empty_click, mjolnir18_idle
-        anm_reload_misfire_empty					= mjolnir18_hand_unjam, mjolnir18_unjam_empty
-        anm_shot_l_jammed							= mjolnir18_hand_shoot, mjolnir18_shoot
-        anm_shots_jammed							= mjolnir18_hand_shoot, mjolnir18_shoot
-		
-		anm_switch_mode								= mjolnir18_hand_switch, mjolnir18_idle
-		anm_switch_mode_empty						= mjolnir18_hand_switch, mjolnir18_idle_empty
+anm_idle_jammed                          = stormbreaker_idle, idle_jammed
+anm_show_jammed                          = stormbreaker_draw, idle_jammed
+anm_hide_jammed                          = stormbreaker_holster, idle_jammed
+anm_idle_aim_jammed                      = stormbreaker_idle_aim, idle_jammed
+anm_idle_sprint_jammed                   = stormbreaker_run, idle_jammed, 1.8
+anm_idle_moving_jammed                   = stormbreaker_walk, idle_jammed, 1.9
+anm_bore_jammed                          = stormbreaker_inspect, idle_jammed
 
 shell_bone                               = wpn_body
 shell_dir                                = 0, 1, 0
@@ -286,7 +254,7 @@ shell_point                              = 0.004, 0, 0.141
 
 fire_bone                                = muzzle
 fire_bone2                               = muzzle
-fire_point                               = 0, 0, 0
+fire_point                               = 0, 0, -0.268
 fire_point2                              = 0, 0, 0
 
 freelook_z_offset_mul					 = 0.6
@@ -294,195 +262,247 @@ freelook_z_offset_mul					 = 0.6
 
 ;---------------------------------------------------------------------------Addons----------------------------------------------------------------------
 [wpn_gungnir_ac10632]:wpn_gungnir
-       
+hud				= wpn_gungnir_ac10632_hud      
 
-1icon_layer			= ac10632
-1icon_layer_x			= 95
-1icon_layer_y			= -2
+1icon_layer			= ac10632_x
+1icon_layer_x			= 97
+1icon_layer_y			= -1
 
 inv_weight                                         = 3.715
 
-hud				= wpn_gungnir_ac10632_hud
-
 [wpn_gungnir_ac10632_hud]:wpn_gungnir_hud
-
 item_visual                	= anomaly_weapons\wpn_gungnir\wpn_gungnir_ac10632_hud.ogf
 
-aim_hud_offset_pos               = -0.061756, 0.01472, -0.059514
-aim_hud_offset_pos_16x9          = -0.061756, 0.01472, -0.059514
-aim_hud_offset_rot               = -0.00284, 0.000689, 0
-aim_hud_offset_rot_16x9          = -0.00284, 0.000689, 0
+        aim_hud_offset_pos               = -0.058442, -0.007103, 0
+        aim_hud_offset_pos_16x9          = -0.058442, -0.007103, 0
+        aim_hud_offset_rot               = 0.008967, 0.007517, 0
+        aim_hud_offset_rot_16x9          = 0.008967, 0.007517, 0
 ;-------------------------------------------------------------------------------
 [wpn_gungnir_eot]:wpn_gungnir 
+hud				= wpn_gungnir_eot_hud
 
-1icon_layer			    = eot
-1icon_layer_x			= 100
-1icon_layer_y			= 0
+1icon_layer			    = eot_x
+1icon_layer_x			= 101
+1icon_layer_y			= 1
 
 inv_weight                                         = 3.900
 
-hud				= wpn_gungnir_eot_hud
-
-
-
 [wpn_gungnir_eot_hud]:wpn_gungnir_hud
-
 item_visual                	= anomaly_weapons\wpn_gungnir\wpn_gungnir_eot_hud.ogf
 
 
-aim_hud_offset_pos               = -0.062029, 0.011951, -0.059514
-aim_hud_offset_pos_16x9          = -0.062029, 0.011951, -0.059514
-aim_hud_offset_rot               = -0.00284, 0.000689, 0
-aim_hud_offset_rot_16x9          = -0.00284, 0.000689, 0
+        aim_hud_offset_pos               = -0.058018, -0.013779, 0
+        aim_hud_offset_pos_16x9          = -0.058018, -0.013779, 0
+        aim_hud_offset_rot               = 0.009746, 0.007245, 0
+        aim_hud_offset_rot_16x9          = 0.009746, 0.007245, 0
 ;--------------------------------------------------------------------------------
 [wpn_gungnir_0kp2]:wpn_gungnir
-
 hud						= wpn_gungnir_0kp2_hud
 
 inv_weight                                         = 3.800
 
-1icon_layer			    = 0kp2
+1icon_layer			    = 0kp2_x
 1icon_layer_x			= 98
 1icon_layer_y			= 6
 
 [wpn_gungnir_0kp2_hud]:wpn_gungnir_hud
-
 item_visual				= anomaly_weapons\wpn_gungnir\wpn_gungnir_0kp2_hud.ogf
 
-aim_hud_offset_pos               = -0.060166, 0.018625, -0.059514
-aim_hud_offset_pos_16x9          = -0.060166, 0.018625, -0.059514
-aim_hud_offset_rot               = -0.00284, 0.000689, 0
-aim_hud_offset_rot_16x9          = -0.00284, 0.000689, 0
-;-------------------------------------------------------------------------------------------------------------------------------
-[wpn_gungnir_mepro]:wpn_gungnir
-
-hud						= wpn_gungnir_mepro_hud
-
-inv_weight                                         = 3.972
-
-1icon_layer			    = mepro
-1icon_layer_x			= 95
-1icon_layer_y			= 4
-
-[wpn_gungnir_mepro_hud]:wpn_gungnir_hud
-
-item_visual				= anomaly_weapons\wpn_gungnir\wpn_gungnir_mepro_hud.ogf
-
-aim_hud_offset_pos               = -0.062767, 0.006827, -0.059514
-aim_hud_offset_pos_16x9          = -0.062767, 0.006827, -0.059514
-aim_hud_offset_rot               = -0.00284, 0.000689, 0
-aim_hud_offset_rot_16x9          = -0.00284, 0.000689, 0
-
+        aim_hud_offset_pos               = -0.055022, -0.00142, 0
+        aim_hud_offset_pos_16x9          = -0.055022, -0.00142, 0
+        aim_hud_offset_rot               = 0.009195, 0.006812, 0
+        aim_hud_offset_rot_16x9          = 0.009195, 0.006812, 0
 ;-------------------------------------------------------------------------------------------------------------------------------
 [wpn_gungnir_aimpoint]:wpn_gungnir
-
 hud						= wpn_gungnir_aimpoint_hud
 
 inv_weight                                         = 3.730
 
-1icon_layer			    = aimpoint
-1icon_layer_x			= 100
+1icon_layer			    = aimpoint_x
+1icon_layer_x			= 96
 1icon_layer_y			= -8
 
 [wpn_gungnir_aimpoint_hud]:wpn_gungnir_hud
-
 item_visual				= anomaly_weapons\wpn_gungnir\wpn_gungnir_aimpoint_hud.ogf
 
-aim_hud_offset_pos               = -0.061813, 0.012581, -0.059514
-aim_hud_offset_pos_16x9          = -0.061813, 0.012581, -0.059514
-aim_hud_offset_rot               = -0.00284, 0.000689, 0
-aim_hud_offset_rot_16x9          = -0.00284, 0.000689, 0
-
+        aim_hud_offset_pos               = -0.058018, -0.00456, 0
+        aim_hud_offset_pos_16x9          = -0.058018, -0.00456, 0
+        aim_hud_offset_rot               = 0.010106, 0.00757, 0
+        aim_hud_offset_rot_16x9          = 0.010106, 0.00757, 0
 ;-------------------------------------------------------------------------------------------------------------------------------
 [wpn_gungnir_point_aimpro]:wpn_gungnir
-
 hud						= wpn_gungnir_point_aimpro_hud
 
 inv_weight                                         = 3.930
 
-1icon_layer			    = point_aimpro
-1icon_layer_x			= 100
+1icon_layer			    = point_aimpro_x
+1icon_layer_x			= 102
 1icon_layer_y			= -8
 
 [wpn_gungnir_point_aimpro_hud]:wpn_gungnir_hud
-
 item_visual				= anomaly_weapons\wpn_gungnir\wpn_gungnir_aimpoint_pro_hud.ogf
 
-aim_hud_offset_pos               = -0.062132, 0.009312, -0.059514
-aim_hud_offset_pos_16x9          = -0.062132, 0.009312, -0.059514
-aim_hud_offset_rot               = 0.004192, 0.001437, 0
-aim_hud_offset_rot_16x9          = 0.004192, 0.001437, 0
-
+        aim_hud_offset_pos               = -0.056862, -0.007383, 0
+        aim_hud_offset_pos_16x9          = -0.056862, -0.007383, 0
+        aim_hud_offset_rot               = 0.010524, 0.004054, 0
+        aim_hud_offset_rot_16x9          = 0.010524, 0.004054, 0
 ;-------------------------------------------------------------------------------------------------------------------------------
 [wpn_gungnir_e0t2]:wpn_gungnir
-
 hud						= wpn_gungnir_e0t2_hud
 
 inv_weight                                         = 3.830
 
-1icon_layer			    = e0t2
-1icon_layer_x			= 95
-1icon_layer_y			= -5
+1icon_layer			    = e0t2_x
+1icon_layer_x			= 99
+1icon_layer_y			= -4
 
 [wpn_gungnir_e0t2_hud]:wpn_gungnir_hud
-
 item_visual				= anomaly_weapons\wpn_gungnir\wpn_gungnir_e0t2_hud.ogf
 
-aim_hud_offset_pos               = -0.06197, 0.013999, -0.059514
-aim_hud_offset_pos_16x9          = -0.06197, 0.013999, -0.059514
-aim_hud_offset_rot               = -0.00284, 0.000689, 0
-aim_hud_offset_rot_16x9          = -0.00284, 0.000689, 0
-
+        aim_hud_offset_pos               = -0.057975, -0.007472, 0
+        aim_hud_offset_pos_16x9          = -0.057975, -0.007472, 0
+        aim_hud_offset_rot               = 0.007693, 0.00689, 0
+        aim_hud_offset_rot_16x9          = 0.007693, 0.00689, 0
 ;-------------------------------------------------------------------------------------------------------------------------------
 [wpn_gungnir_compm4s]:wpn_gungnir
-
 hud					= wpn_gungnir_compm4s_hud
 
-1icon_layer                              = compm4s
-1icon_layer_x			= 90
+1icon_layer                              = compm4s_x
+1icon_layer_x			= 99
 1icon_layer_y			= -8
 
 inv_weight                               = 3.980
 
 [wpn_gungnir_compm4s_hud]:wpn_gungnir_hud
-
 item_visual                		= anomaly_weapons\wpn_gungnir\wpn_gungnir_compm4s_hud.ogf
 
-aim_hud_offset_pos               = -0.061919, 0.016628, -0.059514
-aim_hud_offset_pos_16x9          = -0.061919, 0.016628, -0.059514
-aim_hud_offset_rot               = -0.00284, 0.000689, 0
-aim_hud_offset_rot_16x9          = -0.00284, 0.000689, 0
+        aim_hud_offset_pos               = -0.057277, -0.007536, 0
+        aim_hud_offset_pos_16x9          = -0.057277, -0.007536, 0
+        aim_hud_offset_rot               = 0.008707, 0.006867, 0
+        aim_hud_offset_rot_16x9          = 0.008707, 0.006867, 0
 ;-------------------------------------------------------------------------------------------------------------------------------
 [wpn_gungnir_t12]:wpn_gungnir
-
 hud					= wpn_gungnir_t12_hud
 
-1icon_layer                              = t12
-1icon_layer_x			= 90
-1icon_layer_y			= -8
+1icon_layer                              = t12_x
+1icon_layer_x			= 98
+1icon_layer_y			= -4
 
 inv_weight                               = 3.980
 
-	s3ds_reticle_size 	= 1.9
-	
-[wpn_gungnir_t12_hud]:wpn_gungnir_hud
 
+[wpn_gungnir_t12_hud]:wpn_gungnir_hud
 item_visual                		= anomaly_weapons\wpn_gungnir\wpn_gungnir_t12_hud.ogf
 
-aim_hud_offset_pos               = -0.061919, 0.016628, -0.059514
-aim_hud_offset_pos_16x9          = -0.061919, 0.016628, -0.059514
-aim_hud_offset_rot               = -0.00284, 0.000689, 0
-aim_hud_offset_rot_16x9          = -0.00284, 0.000689, 0
+        aim_hud_offset_pos               = -0.057277, -0.007536, 0
+        aim_hud_offset_pos_16x9          = -0.057277, -0.007536, 0
+        aim_hud_offset_rot               = 0.008995, 0.005137, 0
+        aim_hud_offset_rot_16x9          = 0.008995, 0.005137, 0
+;-------------------------------------------------------------------------------------------------------------------------------
+[wpn_gungnir_p1x42]:wpn_gungnir
+hud						= wpn_gungnir_p1x42_hud
 
+inv_weight                                         = 3.972
+
+1icon_layer			    = p1x42_x
+1icon_layer_x			= 97
+1icon_layer_y			= -7
+
+[wpn_gungnir_p1x42_hud]:wpn_gungnir_hud
+item_visual				= anomaly_weapons\wpn_gungnir\wpn_gungnir_p1x42_hud.ogf
+
+        aim_hud_offset_pos               = -0.058091, -0.007482, 0
+        aim_hud_offset_pos_16x9          = -0.058091, -0.007482, 0
+        aim_hud_offset_rot               = 0.010458, 0.006907, 0
+        aim_hud_offset_rot_16x9          = 0.010458, 0.006907, 0
+;-------------------------------------------------------------------------------------------------------------------------------
+[wpn_gungnir_bossxe]:wpn_gungnir
+hud						= wpn_gungnir_bossxe_hud
+
+inv_weight                                         = 3.972
+
+1icon_layer			    = bossxe_x
+1icon_layer_x			= 99
+1icon_layer_y			= -4
+
+use_alt_aim_hud			= true
+laser_status			= true
+
+[wpn_gungnir_bossxe_hud]:wpn_gungnir_hud
+item_visual				= anomaly_weapons\wpn_gungnir\wpn_gungnir_bossxe_hud.ogf
+
+        aim_hud_offset_pos               = -0.057281, -0.015979, 0
+        aim_hud_offset_pos_16x9          = -0.057281, -0.015979, 0
+        aim_hud_offset_rot               = -0.002272, 0.004955, 0
+        aim_hud_offset_rot_16x9          = -0.002272, 0.004955, 0
+
+        aim_hud_offset_alt_pos           = -0.080215, -0.085349, 0
+        aim_hud_offset_alt_pos_16x9      = -0.080215, -0.085349, 0
+        aim_hud_offset_alt_rot           = -0.003752, 0.010601, 0.7
+        aim_hud_offset_alt_rot_16x9      = -0.003752, 0.010601, 0.7
+
+        hands_orientation                = -0.072963, -0.75207, 0
+        hands_orientation_16x9           = -0.072963, -0.75207, 0
+;-------------------------------------------------------------------------------------------------------------------------------
+[wpn_gungnir_uh2]:wpn_gungnir
+hud						= wpn_gungnir_uh2_hud
+
+inv_weight                                         = 3.972
+
+1icon_layer			    = uh2_x
+1icon_layer_x			= 99
+1icon_layer_y			= -5
+
+[wpn_gungnir_uh2_hud]:wpn_gungnir_hud
+item_visual				= anomaly_weapons\wpn_gungnir\wpn_gungnir_uh2_hud.ogf
+
+        aim_hud_offset_pos               = -0.058054, -0.009887, 0
+        aim_hud_offset_pos_16x9          = -0.058054, -0.009887, 0
+        aim_hud_offset_rot               = 0.008826, 0.007114, 0
+        aim_hud_offset_rot_16x9          = 0.008826, 0.007114, 0
+;-------------------------------------------------------------------------------------------------------------------------------
+[wpn_gungnir_lco1]:wpn_gungnir
+hud						= wpn_gungnir_lco1_hud
+
+inv_weight                                         = 3.972
+
+1icon_layer			    = lco1_x
+1icon_layer_x			= 96
+1icon_layer_y			= -2
+
+[wpn_gungnir_lco1_hud]:wpn_gungnir_hud
+item_visual				= anomaly_weapons\wpn_gungnir\wpn_gungnir_lco1_hud.ogf
+
+        aim_hud_offset_pos               = -0.058537, -0.011396, 0
+        aim_hud_offset_pos_16x9          = -0.058537, -0.011396, 0
+        aim_hud_offset_rot               = 0.008876, 0.007746, 0
+        aim_hud_offset_rot_16x9          = 0.008876, 0.007746, 0
+;-------------------------------------------------------------------------------------------------------------------------------
+[wpn_gungnir_he510]:wpn_gungnir
+hud						= wpn_gungnir_he510_hud
+
+inv_weight                                         = 3.972
+
+1icon_layer			    = he510_x
+1icon_layer_x			= 95
+1icon_layer_y			= -2
+
+[wpn_gungnir_he510_hud]:wpn_gungnir_hud
+item_visual				= anomaly_weapons\wpn_gungnir\wpn_gungnir_he510_hud.ogf
+
+        aim_hud_offset_pos               = -0.058366, -0.009959, 0
+        aim_hud_offset_pos_16x9          = -0.058366, -0.009959, 0
+        aim_hud_offset_rot               = 0.00945, 0.007498, 0
+        aim_hud_offset_rot_16x9          = 0.00945, 0.007498, 0
 ;-------------------------------------------------------------------------------------------------------------------------------
 ;-----------------------------------------------------------SCOPES--------------------------------------------------------------
 ;-------------------------------------------------------------------------------------------------------------------------------
 [wpn_gungnir_marchf]:wpn_gungnir
 hud                                      = wpn_gungnir_marchf_hud
 
-1icon_layer                              = marchf
-1icon_layer_x			= 80
-1icon_layer_y			= 2
+1icon_layer                              = marchf_x
+1icon_layer_x			= 77
+1icon_layer_y			= 1
 
 inv_weight                               = 4.240
 
@@ -493,18 +513,18 @@ scope_dynamic_zoom                       = on
 
 [wpn_gungnir_marchf_hud]:wpn_gungnir_hud
 item_visual                              = anomaly_weapons\wpn_gungnir\wpn_gungnir_marchf_hud.ogf
-        aim_hud_offset_pos               = -0.06078, 0.011412, -0.046984
-        aim_hud_offset_pos_16x9          = -0.06078, 0.011412, -0.046984
-        aim_hud_offset_rot               = 0.004412, -0.003235, 0
-        aim_hud_offset_rot_16x9          = 0.004412, -0.003235, 0
 
+        aim_hud_offset_pos               = -0.056602, -0.009294, -0.002336
+        aim_hud_offset_pos_16x9          = -0.056602, -0.009294, -0.002336
+        aim_hud_offset_rot               = 0.013329, 0.002434, 0
+        aim_hud_offset_rot_16x9          = 0.013329, 0.002434, 0
 ;------------------------------------------------------------------------------------------------
 [wpn_gungnir_pn23]:wpn_gungnir
 hud					= wpn_gungnir_pn23_hud
 
-1icon_layer                              = pn23
-1icon_layer_x			= 70
-1icon_layer_y			= -8
+1icon_layer                              = pn23_x
+1icon_layer_x			= 60
+1icon_layer_y			= -7
 
 inv_weight                                         = 4.250
 
@@ -515,16 +535,17 @@ scope_dynamic_zoom                       = on
 
 [wpn_gungnir_pn23_hud]:wpn_gungnir_hud
 item_visual				= anomaly_weapons\wpn_gungnir\wpn_gungnir_pn23_hud.ogf
-        aim_hud_offset_pos               = -0.060906, 0.000537, -0.077476
-        aim_hud_offset_pos_16x9          = -0.060906, 0.000537, -0.077476
-        aim_hud_offset_rot               = 0.004431, -0.003959, 0
-        aim_hud_offset_rot_16x9          = 0.004431, -0.003959, 0
+
+        aim_hud_offset_pos               = -0.057053, -0.02164, -0.039164
+        aim_hud_offset_pos_16x9          = -0.057053, -0.02164, -0.039164
+        aim_hud_offset_rot               = 0.013141, 0.002215, 0
+        aim_hud_offset_rot_16x9          = 0.013141, 0.002215, 0
 ;------------------------------------------------------------------------------------------------
 [wpn_gungnir_acog]:wpn_gungnir
 hud					                               = wpn_gungnir_acog_hud
 
-1icon_layer                                        = acog
-1icon_layer_x			= 83
+1icon_layer                                        = acog_x
+1icon_layer_x			= 87
 1icon_layer_y			= 0
 
 inv_weight                                         = 3.950
@@ -535,16 +556,17 @@ zoom_rotate_time                                   = 0.25
 
 [wpn_gungnir_acog_hud]:wpn_gungnir_hud
 item_visual				= anomaly_weapons\wpn_gungnir\wpn_gungnir_acog_hud.ogf
-        aim_hud_offset_pos               = -0.061591, 0.013602, -0.102326
-        aim_hud_offset_pos_16x9          = -0.061591, 0.013602, -0.102326
-        aim_hud_offset_rot               = 0.009873, -0.003581, 0
-        aim_hud_offset_rot_16x9          = 0.009873, -0.003581, 0
+
+        aim_hud_offset_pos               = -0.057092, -0.007668, -0.053045
+        aim_hud_offset_pos_16x9          = -0.057092, -0.007668, -0.053045
+        aim_hud_offset_rot               = 0.020098, 0.002591, 0
+        aim_hud_offset_rot_16x9          = 0.020098, 0.002591, 0
 ;------------------------------------------------------------------------------------------------
 [wpn_gungnir_triji]:wpn_gungnir
 hud					    = wpn_gungnir_triji_hud
 
-1icon_layer             = acog
-1icon_layer_x			= 83
+1icon_layer             = acog_x
+1icon_layer_x			= 87
 1icon_layer_y			= 0
 
 inv_weight                                         = 4.025
@@ -558,140 +580,131 @@ use_alt_aim_hud                   = true
 [wpn_gungnir_triji_hud]:wpn_gungnir_hud
 item_visual				= anomaly_weapons\wpn_gungnir\wpn_gungnir_trijicon_rmr_hud.ogf
 
-        aim_hud_offset_alt_pos           = -0.080862, -0.050206, -0.052342
-        aim_hud_offset_alt_pos_16x9      = -0.080862, -0.050206, -0.052342
-        aim_hud_offset_alt_rot           = -0.01093, -0.001433, 0.77
-        aim_hud_offset_alt_rot_16x9      = -0.01093, -0.001433, 0.77
+        aim_hud_offset_pos               = -0.057092, -0.007668, -0.053045
+        aim_hud_offset_pos_16x9          = -0.057092, -0.007668, -0.053045
+        aim_hud_offset_rot               = 0.020098, 0.002591, 0
+        aim_hud_offset_rot_16x9          = 0.020098, 0.002591, 0
 		
-        aim_hud_offset_pos               = -0.061591, 0.013602, -0.102326
-        aim_hud_offset_pos_16x9          = -0.061591, 0.013602, -0.102326
-        aim_hud_offset_rot               = 0.009873, -0.003581, 0
-        aim_hud_offset_rot_16x9          = 0.009873, -0.003581, 0
-
+        aim_hud_offset_alt_pos           = -0.065279, -0.058975, 0
+        aim_hud_offset_alt_pos_16x9      = -0.065279, -0.058975, 0
+        aim_hud_offset_alt_rot           = 0.009183, 0.006443, 0.79
+        aim_hud_offset_alt_rot_16x9      = 0.009183, 0.006443, 0.79
 ;------------------------------------------------------------------------------------------------
 [wpn_gungnir_specter]:wpn_gungnir 
 hud					= wpn_gungnir_specter_hud
-zoom_step_count = 1
 
-1icon_layer                              = specter
-1icon_layer_x                            = 72
-1icon_layer_y                            = -7
+1icon_layer                              = specter_x
+1icon_layer_x                            = 70
+1icon_layer_y                            = -5
 
 inv_weight                                         = 4.270
 
-scope_status                                       = 1
-scope_zoom_factor                                  = 30
-zoom_rotate_time                                   = 0.25
-scope_dynamic_zoom                                 = on
+scope_status						= 1
+scope_zoom_factor					= 30
+zoom_rotate_time					= 0.25
+scope_dynamic_zoom					= on
+zoom_step_count 					= 1
 
-use_alt_aim_hud                   = true		
+use_alt_aim_hud						= true		
 
 [wpn_gungnir_specter_hud]:wpn_gungnir_hud
 item_visual				= anomaly_weapons\wpn_gungnir\wpn_gungnir_specter_hud.ogf
 
-        aim_hud_offset_alt_pos           = -0.061804, -0.014176, -0.088328
-        aim_hud_offset_alt_pos_16x9      = -0.061804, -0.014176, -0.088328
-        aim_hud_offset_alt_rot           = 0.00634, 0.000247, 0
-        aim_hud_offset_alt_rot_16x9      = 0.00634, 0.000247, 0
+        aim_hud_offset_pos               = -0.056913, -0.010127, -0.036512
+        aim_hud_offset_pos_16x9          = -0.056913, -0.010127, -0.036512
+        aim_hud_offset_rot               = 0.013811, 0.002637, 0
+        aim_hud_offset_rot_16x9          = 0.013811, 0.002637, 0
 		
-        aim_hud_offset_pos               = -0.06117, 0.01155, -0.085133
-        aim_hud_offset_pos_16x9          = -0.06117, 0.01155, -0.085133
-        aim_hud_offset_rot               = 0.004102, -0.003698, 0
-        aim_hud_offset_rot_16x9          = 0.004102, -0.003698, 0
-
+        aim_hud_offset_alt_pos           = -0.057478, -0.037007, 0
+        aim_hud_offset_alt_pos_16x9      = -0.057478, -0.037007, 0
+        aim_hud_offset_alt_rot           = 0.013515, 0.007181, 0
+        aim_hud_offset_alt_rot_16x9      = 0.013515, 0.007181, 0
 ;--------------------------------------------------------------------------------
 [wpn_gungnir_spec_alt]:wpn_gungnir
 hud					= wpn_gungnir_spec_alt_hud
-zoom_step_count = 1
 
-1icon_layer                              = specter
-1icon_layer_x                            = 72
-1icon_layer_y                            = -7
+1icon_layer                              = specter_x
+1icon_layer_x                            = 70
+1icon_layer_y                            = -5
 
-inv_weight                                         = 4.345
-scope_status                                       = 1
-scope_zoom_factor                                  = 30
-zoom_rotate_time                                   = 0.25
-scope_dynamic_zoom                                 = on
+inv_weight                                         = 4.270
 
-scope_zoom_factor_alt             = 0
+scope_status						= 1
+scope_zoom_factor					= 30
+zoom_rotate_time					= 0.25
+scope_dynamic_zoom					= on
+zoom_step_count 					= 1
 
-use_alt_aim_hud                   = true		
+use_alt_aim_hud						= true		
 
 [wpn_gungnir_spec_alt_hud]:wpn_gungnir_hud
 
 item_visual				= anomaly_weapons\wpn_gungnir\wpn_gungnir_spec_alt_hud.ogf
 
-        aim_hud_offset_alt_pos           = -0.080862, -0.050206, -0.052342
-        aim_hud_offset_alt_pos_16x9      = -0.080862, -0.050206, -0.052342
-        aim_hud_offset_alt_rot           = -0.01093, -0.001433, 0.77
-        aim_hud_offset_alt_rot_16x9      = -0.01093, -0.001433, 0.77
-		
-        aim_hud_offset_pos               = -0.06117, 0.01155, -0.085133
-        aim_hud_offset_pos_16x9          = -0.06117, 0.01155, -0.085133
-        aim_hud_offset_rot               = 0.004102, -0.003698, 0
-        aim_hud_offset_rot_16x9          = 0.004102, -0.003698, 0
-
+        aim_hud_offset_pos               = -0.056913, -0.010127, -0.036512
+        aim_hud_offset_pos_16x9          = -0.056913, -0.010127, -0.036512
+        aim_hud_offset_rot               = 0.013811, 0.002637, 0
+        aim_hud_offset_rot_16x9          = 0.013811, 0.002637, 0
+	
+        aim_hud_offset_alt_pos           = -0.065279, -0.058975, 0
+        aim_hud_offset_alt_pos_16x9      = -0.065279, -0.058975, 0
+        aim_hud_offset_alt_rot           = 0.009183, 0.006443, 0.79
+        aim_hud_offset_alt_rot_16x9      = 0.009183, 0.006443, 0.79
 ;------------------------------------------------------------------------------------------------
 [wpn_gungnir_leupold]:wpn_gungnir
-
 hud					= wpn_gungnir_leupold_hud
 
-1icon_layer                              = leupold
-1icon_layer_x			= 85
-1icon_layer_y			= 0
+1icon_layer                              = leupold_x
+1icon_layer_x			= 72
+1icon_layer_y			= -3
 
 inv_weight                                         = 4.280
+
 scope_status                                       = 1
 scope_zoom_factor                                  = 15
 zoom_rotate_time                                   = 0.25
 scope_dynamic_zoom                                 = on
 
 [wpn_gungnir_leupold_hud]:wpn_gungnir_hud
-
 item_visual				= anomaly_weapons\wpn_gungnir\wpn_gungnir_leupold_hud.ogf
 
-        aim_hud_offset_pos               = -0.061243, 0.009842, -0.060712
-        aim_hud_offset_pos_16x9          = -0.061243, 0.009842, -0.060712
-        aim_hud_offset_rot               = 0.004365, -0.003634, 0
-        aim_hud_offset_rot_16x9          = 0.004365, -0.003634, 0
-
+        aim_hud_offset_pos               = -0.05721, -0.010859, 0.017786
+        aim_hud_offset_pos_16x9          = -0.05721, -0.010859, 0.017786
+        aim_hud_offset_rot               = 0.013671, 0.002604, 0
+        aim_hud_offset_rot_16x9          = 0.013671, 0.002604, 0
 ;------------------------------------------------------------------------------------------------
 [wpn_gungnir_mark8_rmr]:wpn_gungnir
 hud					= wpn_gungnir_mark8_rmr_hud
 
-1icon_layer                              = leupold
-1icon_layer_x			= 85
-1icon_layer_y			= 0
+1icon_layer                              = leupold_x
+1icon_layer_x			= 72
+1icon_layer_y			= -3
 
-inv_weight                                         = 4.455
+inv_weight                                         = 4.280
 
 scope_status                                       = 1
 scope_zoom_factor                                  = 15
 zoom_rotate_time                                   = 0.25
-scope_dynamic_zoom                                 = on
-
-use_alt_aim_hud                   = true		
+scope_dynamic_zoom                                 = on		
 
 [wpn_gungnir_mark8_rmr_hud]:wpn_gungnir_hud
-
 item_visual				= anomaly_weapons\wpn_gungnir\wpn_gungnir_mark8_rmr_hud.ogf
 
-        aim_hud_offset_pos               = -0.061243, 0.009842, -0.060712
-        aim_hud_offset_pos_16x9          = -0.061243, 0.009842, -0.060712
-        aim_hud_offset_rot               = 0.004365, -0.003634, 0
-        aim_hud_offset_rot_16x9          = 0.004365, -0.003634, 0
+        aim_hud_offset_pos               = -0.05721, -0.010859, 0.017786
+        aim_hud_offset_pos_16x9          = -0.05721, -0.010859, 0.017786
+        aim_hud_offset_rot               = 0.013671, 0.002604, 0
+        aim_hud_offset_rot_16x9          = 0.013671, 0.002604, 0
 		
-        aim_hud_offset_alt_pos           = -0.080862, -0.050206, -0.052342
-        aim_hud_offset_alt_pos_16x9      = -0.080862, -0.050206, -0.052342
-        aim_hud_offset_alt_rot           = -0.01093, -0.001433, 0.77
-        aim_hud_offset_alt_rot_16x9      = -0.01093, -0.001433, 0.77
+        aim_hud_offset_alt_pos           = -0.065279, -0.058975, 0
+        aim_hud_offset_alt_pos_16x9      = -0.065279, -0.058975, 0
+        aim_hud_offset_alt_rot           = 0.009183, 0.006443, 0.79
+        aim_hud_offset_alt_rot_16x9      = 0.009183, 0.006443, 0.79
 ;------------------------------------------------------------------------------------
 [wpn_gungnir_gauss_sight]:wpn_gungnir
 hud                                      = wpn_gungnir_gauss_sight_hud
 
-1icon_layer                              = gauss_sight
-1icon_layer_x			= 80
+1icon_layer             = gauss_sight_x
+1icon_layer_x			= 63
 1icon_layer_y			= 2
 
 inv_weight                               = 4.55
@@ -701,35 +714,149 @@ scope_dynamic_zoom                       = on
         scope_zoom_factor                = 12
 
 [wpn_gungnir_gauss_sight_hud]:wpn_gungnir_hud
-
 item_visual                              = anomaly_weapons\wpn_gungnir\wpn_gungnir_gauss_hud.ogf
-        aim_hud_offset_pos               = -0.061044, 0.013729, -0.095063
-        aim_hud_offset_pos_16x9          = -0.061044, 0.013729, -0.095063
-        aim_hud_offset_rot               = 0.003691, -0.003709, 0
-        aim_hud_offset_rot_16x9          = 0.003691, -0.003709, 0
 
+        aim_hud_offset_pos               = -0.057033, -0.007293, -0.048974
+        aim_hud_offset_pos_16x9          = -0.057033, -0.007293, -0.048974
+        aim_hud_offset_rot               = 0.014217, 0.002797, 0
+        aim_hud_offset_rot_16x9          = 0.014217, 0.002797, 0
 ;------------------------------------------------------------------------------------------------
 [wpn_gungnir_ps320]:wpn_gungnir
 hud                                      = wpn_gungnir_ps320_hud
-zoom_step_count = 1
 
-1icon_layer                              = ps320
-1icon_layer_x			= 68
-1icon_layer_y			= -4
+1icon_layer                              = ps320_x
+1icon_layer_x			= 64
+1icon_layer_y			= -6
 
 inv_weight                               = 4.45
 
 scope_status                             = 1
 scope_dynamic_zoom                       = on
         scope_zoom_factor                = 20
+zoom_step_count 						 = 1
 
 [wpn_gungnir_ps320_hud]:wpn_gungnir_hud
-
 item_visual                              = anomaly_weapons\wpn_gungnir\wpn_gungnir_ps320_hud.ogf
 
-        aim_hud_offset_pos               = -0.0617, 0.012934, -0.090581
-        aim_hud_offset_pos_16x9          = -0.0617, 0.012934, -0.090581
-        aim_hud_offset_rot               = 0.003956, -0.003856, 0
-        aim_hud_offset_rot_16x9          = 0.003956, -0.003856, 0
-
+        aim_hud_offset_pos               = -0.057564, -0.007382, -0.03886
+        aim_hud_offset_pos_16x9          = -0.057564, -0.007382, -0.03886
+        aim_hud_offset_rot               = 0.013417, 0.002605, 0
+        aim_hud_offset_rot_16x9          = 0.013417, 0.002605, 0
 ;------------------------------------------------------------------------------------------------
+[wpn_gungnir_cortex]:wpn_gungnir
+hud                                      = wpn_gungnir_cortex_hud
+
+1icon_layer                              = cortex_x
+1icon_layer_x			= 70
+1icon_layer_y			= -1
+
+inv_weight                               = 4.50
+
+scope_status                             = 1
+scope_dynamic_zoom                       = on
+        scope_zoom_factor                = 10
+		
+[wpn_gungnir_cortex_hud]:wpn_gungnir_hud
+item_visual                              = anomaly_weapons\wpn_gungnir\wpn_gungnir_cortex_hud.ogf
+
+        aim_hud_offset_pos               = -0.057216, -0.014604, 0.030564
+        aim_hud_offset_pos_16x9          = -0.057216, -0.014604, 0.030564
+        aim_hud_offset_rot               = 0.013824, 0.002497, 0
+        aim_hud_offset_rot_16x9          = 0.013824, 0.002497, 0
+;------------------------------------------------------------------------------------------------
+[wpn_gungnir_razorhd]:wpn_gungnir
+hud                                      = wpn_gungnir_razorhd_hud
+
+1icon_layer                              = razorhd_x
+1icon_layer_x			= 70
+1icon_layer_y			= -7
+
+inv_weight                               = 4.40
+
+scope_status                             = 1
+scope_dynamic_zoom                       = on
+        scope_zoom_factor                = 20
+
+[wpn_gungnir_razorhd_hud]:wpn_gungnir_hud
+item_visual                              = anomaly_weapons\wpn_gungnir\wpn_gungnir_razorhd_hud.ogf
+
+        aim_hud_offset_pos               = -0.057092, -0.009221, 0.024351
+        aim_hud_offset_pos_16x9          = -0.057092, -0.009221, 0.024351
+        aim_hud_offset_rot               = 0.013112, 0.002151, 0
+        aim_hud_offset_rot_16x9          = 0.013112, 0.002151, 0
+;------------------------------------------------------------------------------------------------
+[wpn_gungnir_echo1]:wpn_gungnir
+hud                                      = wpn_gungnir_echo1_hud
+
+1icon_layer                              = echo1_x
+1icon_layer_x			= 93
+1icon_layer_y			= -4
+
+inv_weight                               = 4.52
+
+scope_status                             = 1
+scope_dynamic_zoom                       = on
+        scope_zoom_factor                = 60
+zoom_step_count 						 = 1
+
+[wpn_gungnir_echo1_hud]:wpn_gungnir_hud
+item_visual                              = anomaly_weapons\wpn_gungnir\wpn_gungnir_echo1_hud.ogf
+
+        aim_hud_offset_pos               = -0.055905, -0.017065, 0
+        aim_hud_offset_pos_16x9          = -0.055905, -0.017065, 0
+        aim_hud_offset_rot               = 0.003956, -0.003908, 0
+        aim_hud_offset_rot_16x9          = 0.003956, -0.003908, 0
+;------------------------------------------------------------------------------------------------
+[wpn_gungnir_devo]:wpn_gungnir
+hud                                      = wpn_gungnir_devo_hud
+
+1icon_layer                              = devo_x
+1icon_layer_x			= 60
+1icon_layer_y			= -4
+
+inv_weight                               = 4.54
+
+scope_status                     = 1
+scope_zoom_factor                = 20
+
+use_alt_aim_hud			= true
+
+[wpn_gungnir_devo_hud]:wpn_gungnir_hud
+item_visual                              = anomaly_weapons\wpn_gungnir\wpn_gungnir_devo_hud.ogf
+
+        aim_hud_offset_pos               = -0.057079, 0.002162, -0.048185
+        aim_hud_offset_pos_16x9          = -0.057079, 0.002162, -0.048185
+        aim_hud_offset_rot               = 0.01406, 0.002547, 0
+        aim_hud_offset_rot_16x9          = 0.01406, 0.002547, 0
+		
+        aim_hud_offset_alt_pos           = -0.058537, -0.011396, 0
+        aim_hud_offset_alt_pos_16x9      = -0.058537, -0.011396, 0
+        aim_hud_offset_alt_rot           = 0.008876, 0.007746, 0
+        aim_hud_offset_alt_rot_16x9      = 0.008876, 0.007746, 0		
+;------------------------------------------------------------------------------------------------
+[wpn_gungnir_gee36]:wpn_gungnir
+hud                                      = wpn_gungnir_gee36_hud
+
+1icon_layer                              = gee36_x
+1icon_layer_x			= 70
+1icon_layer_y			= -2
+
+inv_weight                               = 4.54
+
+scope_status                     = 1
+scope_zoom_factor                = 40
+
+use_alt_aim_hud			= true
+
+[wpn_gungnir_gee36_hud]:wpn_gungnir_hud
+item_visual                              = anomaly_weapons\wpn_gungnir\wpn_gungnir_gee36_hud.ogf
+
+        aim_hud_offset_pos               = -0.056997, -0.010578, -0.023589
+        aim_hud_offset_pos_16x9          = -0.056997, -0.010578, -0.023589
+        aim_hud_offset_rot               = 0.014308, 0.002728, 0
+        aim_hud_offset_rot_16x9          = 0.014308, 0.002728, 0
+
+        aim_hud_offset_alt_pos           = -0.057563, -0.027524, 0
+        aim_hud_offset_alt_pos_16x9      = -0.057563, -0.027524, 0
+        aim_hud_offset_alt_rot           = 0.009799, 0.007438, 0
+        aim_hud_offset_alt_rot_16x9      = 0.009799, 0.007438, 0		
